@@ -4,22 +4,26 @@ import Contact from "../../Models/Contact";
 import Type from "../Home/Type";
 
 
-const Header = () => {
-    const lists = [];
-    for (const c of Contact) {
-        console.log(c.href === "")
-        lists.push(
-            <li className='text-xs' key={c.text}>
-                {
-                    c.href ? <>
-                    <a href={c.href}><FeatherIcon className="inline" size="13" icon={c.featherIcon} /> {c.text}</a> 
-                    </> : 
-                    <><FeatherIcon className="inline" size="13" icon={c.featherIcon} /> {c.text}</>
-                }
+const ContactItem = ({ contact }) => {
+    if (contact.href) {
+        return (
+            <li>
+                <a href={contact.href}>
+                    <FeatherIcon className="inline" size="13" icon={contact.featherIcon} /> {contact.text}
+                </a>
             </li>
         )
     }
 
+    return (
+        <li>
+            <FeatherIcon className="inline" size="13" icon={contact.featherIcon} /> {contact.text}
+        </li>
+    )
+}
+
+
+const Header = () => {
     return (
         <div className="flex">
             <div className="flex-1">
@@ -28,9 +32,8 @@ const Header = () => {
             </div>
             <div className="flex-2 border-l border-dotted pl-3">
                 <ul className="list-none">
-                    {lists}
+                    {Contact.map((c) => <ContactItem contact={c} />)}
                 </ul>
-
             </div>
         </div>
     )
