@@ -1,6 +1,6 @@
 const Contact = [
     { 
-        text: "+880 1755655440",
+        text: "+880 175 565 5440",
         featherIcon: "phone",
         href: "tel:+8801755655440"
     },

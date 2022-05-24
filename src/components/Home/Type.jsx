@@ -5,11 +5,12 @@ const Type = () => {
     return (
         <TypeWriterEffect
             startDelay={100}
-            cursorColor="black"
+            cursorColor="white"
             typeSpeed={200}
+            multiTextLoop={true}
             multiText={[
-                'Software Engineer',
                 'Full Stack Engineer',
+                'Software Engineer',
                 'DevOps Engineer',
             ]}
         />

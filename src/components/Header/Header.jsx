@@ -7,7 +7,7 @@ import Type from "../Home/Type";
 const ContactItem = ({ contact }) => {
     if (contact.href) {
         return (
-            <li>
+            <li key={contact.text}>
                 <a href={contact.href}>
                     <FeatherIcon className="inline" size="13" icon={contact.featherIcon} /> {contact.text}
                 </a>
@@ -16,7 +16,7 @@ const ContactItem = ({ contact }) => {
     }
 
     return (
-        <li>
+        <li key={contact.text}>
             <FeatherIcon className="inline" size="13" icon={contact.featherIcon} /> {contact.text}
         </li>
     )
@@ -32,7 +32,7 @@ const Header = () => {
             </div>
             <div className="flex-2 border-l border-dotted pl-3">
                 <ul className="list-none">
-                    {Contact.map((c) => <ContactItem contact={c} />)}
+                    {Contact.map((c) => <ContactItem key={c.text} contact={c} />)}
                 </ul>
             </div>
         </div>
