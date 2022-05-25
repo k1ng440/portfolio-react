@@ -3,11 +3,10 @@ import './Layout.css'
 
 
 const Layout = ({ children }) => {
-    console.log(children)
     return (
-        <article className="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+        <div className="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
             {children}
-        </article>
+        </div>
     )
 };
 

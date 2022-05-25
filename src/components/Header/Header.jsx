@@ -1,31 +1,25 @@
 import FeatherIcon from 'feather-icons-react';
 import React from "react";
-import Contact from "../../Models/Contact";
+import Contact from "../../models/contact";
 import Type from "../Home/Type";
 
 
 const ContactItem = ({ contact }) => {
+    const text = <>
+        <FeatherIcon className="inline" size="13" icon={contact.featherIcon} /> {contact.text}
+    </>
+
     if (contact.href) {
-        return (
-            <li key={contact.text}>
-                <a href={contact.href}>
-                    <FeatherIcon className="inline" size="13" icon={contact.featherIcon} /> {contact.text}
-                </a>
-            </li>
-        )
+        return <li><a href={contact.href}>{text}</a></li>
     }
 
-    return (
-        <li key={contact.text}>
-            <FeatherIcon className="inline" size="13" icon={contact.featherIcon} /> {contact.text}
-        </li>
-    )
+    return <li>{text}</li>
 }
 
 
 const Header = () => {
     return (
-        <div className="flex">
+        <header className="flex">
             <div className="flex-1">
                 <h1 className="text-3xl">Asaduzzaman Pavel</h1>
                 <Type />
@@ -35,7 +29,7 @@ const Header = () => {
                     {Contact.map((c) => <ContactItem key={c.text} contact={c} />)}
                 </ul>
             </div>
-        </div>
+        </header>
     )
 };
 

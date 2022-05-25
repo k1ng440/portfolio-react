@@ -1,4 +1,4 @@
-const Contact = [
+const CONTACT = [
     { 
         text: "+880 175 565 5440",
         featherIcon: "phone",
@@ -19,4 +19,4 @@ const Contact = [
     }
 ]
 
-export default Contact;
+export default CONTACT;

@@ -1,21 +1,20 @@
 import './App.css';
-import Layout from './components/Layout/Layout';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div>
-      <div className="App container mx-auto px-4 px-lg-5 text-sky-400">
-        <Layout> 
-          <Header />
-          <About />
-          <Skills />
-          <Experience />
-        </Layout>
+    <div className="App container container px-4 md:px-0 max-w-6xl mx-auto">
+      <div className="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+        <Header />
+        <About />
+        <Skills />
+        <Experience />
       </div>
+      <Footer />
     </div>
   );
 }

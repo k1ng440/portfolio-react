@@ -1,4 +1,4 @@
-const TopSkills = [
+const SKILLS = [
     {
         category: "Programming & Scripting",
         values: [
@@ -6,6 +6,7 @@ const TopSkills = [
             "Nodejs",
             "PHP",
             "Javascript",
+            "typescript",
             "HTML",
             "CSS",
             "Bash",
@@ -44,20 +45,31 @@ const TopSkills = [
     {
         category: "Frameworks & Methodologies",
         values: [
-            "Laravel", "go-kit", "Express.js", "Meteor", "Angular", "React", "Agile Methodology"
+            "Laravel", 
+            "go-kit",
+            "Express.js",
+            "Meteor",
+            "Angular",
+            "React",
+            "Agile Methodology"
         ]
     },
     {
         category: "Communication Protocols",
         values: [
-            "GRPC", "RESTful API", "RPC", "GraphQL", "TCP/UDP", "WebSockets",
+            "GRPC",
+            "RESTful API",
+            "RPC",
+            "GraphQL",
+            "TCP/UDP",
+            "WebSockets",
         ]
     },
     {
         category: "General",
         values: [
             "Leadership",
-            "Teamwork", 
+            "Teamwork",
             "Collaboration",
             "Critical Thinker",
             "Multi-tasking",
@@ -66,4 +78,4 @@ const TopSkills = [
     }
 ];
 
-export default TopSkills;
+export default SKILLS;
