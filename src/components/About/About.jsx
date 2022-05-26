@@ -16,7 +16,9 @@ const About = () => {
           <h2 className="text-lg font-medium">
            👋🏻 Hi, <span>I am Asaduzzaman Pavel</span>
           </h2>
-           I am a software engineer with building experience building building digital products with different technologies.
+            <p>I am a software engineer, specialised in building applications using mordern programming languages.</p>
+
+            <p>I always want to learn more and do more. I'm also a firm believer that we should never settle. I'm hard working, super curious, passionate, committed and a fast learner!</p>
         </div>
       </div>
     </section>

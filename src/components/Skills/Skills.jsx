@@ -1,12 +1,11 @@
 import React from 'react'
-import SKILLS from '../../models/skills'
+import SKILLS from '../../data/skills'
 
 const SkillListItem = ({ skill }) => {
   return (
-    <li>
-      <b>{skill.category}</b>
-      <br />
-      {skill.values.join(', ')}
+    <li className='mb-3'>
+      <dd className='font-semibold'>{skill.category}</dd>
+      <dt className='text-lime-50'> {skill.values.join(', ')}</dt>
     </li>
   )
 }

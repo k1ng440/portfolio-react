@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/webfontloader": "^1.6.34",
     "feather-icons-react": "^0.5.0",
     "flowbite": "^1.4.7",
     "react": "^18.1.0",
@@ -13,7 +14,8 @@
     "react-scripts": "5.0.1",
     "react-speech": "^1.0.2",
     "react-typewriter-effect": "^1.1.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
